@@ -1,0 +1,38 @@
+<idea-plugin>
+    <id>com.your.company.unique.plugin.id</id>
+    <name>idea毒鸡汤插件</name>
+    <version>1.0</version>
+    <vendor email="caryguan@aliyun.com" url="http://caryguan.club">caryguan</vendor>
+
+    <description><![CDATA[
+     每天一碗毒鸡汤<br>
+      <em>每天一碗毒鸡汤,元气满满的一天开始啦,非要输入四十个字符吗哎哎</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      每天一碗毒鸡汤<br>
+    <em>每天一碗毒鸡汤,元气满满的一天开始啦,非要输入四十个字符吗哎哎</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+    <application-components>
+        <component>
+            <implementation-class>com.caryguan.taunt.MyApplicationComponent</implementation-class>
+        </component>
+    </application-components>
+
+</idea-plugin>
